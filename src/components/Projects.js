@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -21,33 +22,39 @@ const Projects = () => {
           <Col sm={4}>
             <div class="flip-card">
               <div class="flip-card-inner">
-                <img
-                  src={require("./images/ios.png")}
-                  alt="Professional Photo"
-                  style={{ width: "100%", height: "auto" }}
-                />
+                <Link to="/ios">
+                  <img
+                    src={require("./images/ios.png")}
+                    alt="Professional Photo"
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </Link>
               </div>
             </div>
           </Col>
           <Col sm={4}>
             <div class="flip-card">
               <div class="flip-card-inner">
-                <img
-                  src={require("./images/javascript.png")}
-                  alt="Professional Photo"
-                  style={{ width: "100%", height: "auto" }}
-                />
+                <Link to="/javascript">
+                  <img
+                    src={require("./images/javascript.png")}
+                    alt="Professional Photo"
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </Link>
               </div>
             </div>
           </Col>
           <Col sm={4}>
             <div class="flip-card">
               <div class="flip-card-inner">
-                <img
-                  src={require("./images/other.png")}
-                  alt="Professional Photo"
-                  style={{ width: "100%", height: "auto" }}
-                />
+                <Link to="/other">
+                  <img
+                    src={require("./images/other.png")}
+                    alt="Professional Photo"
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </Link>
               </div>
             </div>
           </Col>

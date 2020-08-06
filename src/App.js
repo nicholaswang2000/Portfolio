@@ -1,27 +1,17 @@
 import React from "react";
 import "./App.css";
-import NBar from "./components/Navbar";
-import BoxIntro from "./components/BoxIntro";
-import AboutMe from "./components/About";
-import Projects from "./components/Projects";
-import Footer from "./components/Footer";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="App">
-      <div className="Home">
-        <NBar />
-        <BoxIntro />
-      </div>
-      <div className="About">
-        <AboutMe />
-      </div>
-      <div className="Projects">
-        <Projects />
-      </div>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Route path="/" component={Home} />
+      <Route path="/ios" component={Home} />
+      <Route path="/javascript" component={Home} />
+      <Route path="/other" component={Home} />
+      <Route path="/fun" component={Home} />
+    </BrowserRouter>
   );
 }
 
