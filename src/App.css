@@ -29,3 +29,22 @@
 .introText {
   margin-top: 7%;
 }
+
+.About {
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://images.vexels.com/media/users/3/144709/preview2/95b04989b71b9375d9d04c3ee50cfc05-abstract-white-background-or-backdrop.jpg");
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.imgyeet {
+  height: 70%;
+  width: auto;
+  position: absolute;
+  left: 60%;
+  margin-top: 6em;
+  border-radius: 30px;
+  border: 6px solid black;
+}

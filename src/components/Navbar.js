@@ -8,7 +8,7 @@ const NBar = () => {
   return (
     <div style={{ paddingTop: "1em", fontSize: "1.2em" }}>
       <Navbar collapseOnSelect expand="lg" variant="dark">
-        <Navbar.Brand href="#home" style={{ paddingLeft: "180px" }}>
+        <Navbar.Brand href="#home" style={{ paddingLeft: "150px" }}>
           Logo here
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
