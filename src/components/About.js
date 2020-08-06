@@ -51,7 +51,7 @@ const AboutMe = () => {
           Developers of Berkeley club on campus that emphasises mobile dev
           education and mobile-related projects. Through past internships, I
           also have backend experience working with AWS, Neo4j, MongoDB, Django
-          Rest Framework, and PostreSQL. I'd be open to discussing more
+          Rest Framework, and PostgreSQL. I'd be open to discussing more
           specifics in person.
           <br />
           <br />

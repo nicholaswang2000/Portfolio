@@ -55,7 +55,6 @@
 }
 
 .flip-card {
-  background-color: transparent;
   width: 300px;
   height: 300px;
   perspective: 1000px;
@@ -66,21 +65,13 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.6s;
+  transition: transform 0.3s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.4);
 }
 
 .flip-card:hover .flip-card-inner {
   transform: scale(1.1, 1.1);
-}
-
-.flip-card-front {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #bbb;
-  color: black;
 }
 
 .Footer {
@@ -101,17 +92,80 @@
 }
 
 .memeText {
-  margin-top: 3%;
-  position: absolute;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 25%;
   background-color: rgba(0, 0, 0, 0.6);
   border: 2px solid white;
   color: white;
   text-align: center;
   width: 50%;
   height: 550px;
-  left: 25%;
 }
 
 .carousel-indicators li {
   visibility: hidden;
+}
+
+.iosshowcase {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 10%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  width: 80%;
+  height: 83%;
+}
+
+.project-card-inner {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.4);
+}
+
+.project-card-inner:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.iosprojects {
+  height: 960px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Merriweather Sans", sans-serif;
+  background-image: url("https://images.pexels.com/photos/255464/pexels-photo-255464.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+.javascriptshowcase {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 10%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  width: 80%;
+  height: 70%;
+}
+
+.javascriptprojects {
+  height: 700px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Merriweather Sans", sans-serif;
+  background-image: url("https://images.pexels.com/photos/255464/pexels-photo-255464.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+.btn:focus {
+  outline: none !important;
+  outline-offset: none !important;
 }

@@ -22,7 +22,7 @@ const NBar = () => {
             <Nav.Link href="/" style={{ paddingRight: "40px", color: "white" }}>
               Home
             </Nav.Link>
-            <Nav.Link href="#about" style={{ paddingRight: "40px" }}>
+            <Nav.Link style={{ paddingRight: "40px" }}>
               <AnchorLink href="#about" style={{ color: "white" }}>
                 About
               </AnchorLink>

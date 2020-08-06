@@ -1,5 +1,6 @@
 import React from "react";
 import NBar from "./Navbar";
+import Footer from "./Footer";
 import { Carousel } from "react-bootstrap";
 
 const Memes = () => {
@@ -256,6 +257,7 @@ const Memes = () => {
           </Carousel.Item>
         </Carousel>
       </div>
+      <Footer />
     </div>
   );
 };
