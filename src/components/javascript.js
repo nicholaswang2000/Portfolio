@@ -8,14 +8,28 @@ class Javascript extends Component {
   constructor() {
     super();
     this.state = {
-      show: false,
+      showWar: false,
+      showCommuna: false,
+      showSpongebobify: false,
     };
   }
-  closeModal() {
-    this.setState({ show: false });
+  closeWarModal() {
+    this.setState({ showWar: false });
   }
-  openModal() {
-    this.setState({ show: true });
+  openWarModal() {
+    this.setState({ showWar: true });
+  }
+  closeCommunaModal() {
+    this.setState({ showCommuna: false });
+  }
+  openCommunaModal() {
+    this.setState({ showCommuna: true });
+  }
+  closeSpongebobifyModal() {
+    this.setState({ showSpongebobify: false });
+  }
+  openSpongebobifyModal() {
+    this.setState({ showSpongebobify: true });
   }
   render() {
     return (
@@ -27,11 +41,87 @@ class Javascript extends Component {
               <br />
               JavaScript Showcase
             </h2>
-            <Modal show={this.state.show}>
-              <Modal.Header>Modal Header part</Modal.Header>
-              <Modal.Body>Hi</Modal.Body>
+            <Modal show={this.state.showWar}>
+              <Modal.Body>
+                <h4>War</h4>A quick war game that I created during quarantine
+                that simulates the card game "War". Made with React, Deck of
+                Cards API, and Bootstrap
+              </Modal.Body>
               <Modal.Footer>
-                <Button onClick={() => this.closeModal()}>Close</Button>
+                <Button
+                  onClick={() => this.closeWarModal()}
+                  className="btn-secondary"
+                >
+                  Close
+                </Button>
+                <Link to="/wargamevisitgithub" target="_blank">
+                  <Button
+                    onClick={() => this.closeWarModal()}
+                    className="btn-info"
+                  >
+                    Github
+                  </Button>
+                </Link>
+                <Link to="/wargamevisitsite" target="_blank">
+                  <Button onClick={() => this.closeWarModal()}>Visit</Button>
+                </Link>
+              </Modal.Footer>
+            </Modal>
+            <Modal show={this.state.showCommuna}>
+              <Modal.Body>
+                <h4>Communa</h4>A Chrome extension that allows you to play
+                communist music anywhere you like. Had up to 300 users. Built
+                with Chrome's Javascript Web-dev APIs
+              </Modal.Body>
+              <Modal.Footer>
+                <Button
+                  onClick={() => this.closeCommunaModal()}
+                  className="btn-secondary"
+                >
+                  Close
+                </Button>
+                <Link to="/communavisitgithub" target="_blank">
+                  <Button
+                    onClick={() => this.closeCommunaModal()}
+                    className="btn-info"
+                  >
+                    Github
+                  </Button>
+                </Link>
+                <Link to="/communavisitsite" target="_blank">
+                  <Button onClick={() => this.closeCommunaModal()}>
+                    Visit
+                  </Button>
+                </Link>
+              </Modal.Footer>
+            </Modal>
+            <Modal show={this.state.showSpongebobify}>
+              <Modal.Body>
+                <h4>Spongebobify</h4>A Chrome extension that lets users easily
+                "spongebobify" text - the process of translating into a series
+                of uppercase and lowercase characters. Built with Chrome's
+                Javascript Web-dev APIs
+              </Modal.Body>
+              <Modal.Footer>
+                <Button
+                  onClick={() => this.closeSpongebobifyModal()}
+                  className="btn-secondary"
+                >
+                  Close
+                </Button>
+                <Link to="/spongebobifyvisitgithub" target="_blank">
+                  <Button
+                    onClick={() => this.closeSpongebobifyModal()}
+                    className="btn-info"
+                  >
+                    Github
+                  </Button>
+                </Link>
+                <Link to="/spongebobifyvisitsite" target="_blank">
+                  <Button onClick={() => this.closeSpongebobifyModal()}>
+                    Visit
+                  </Button>
+                </Link>
               </Modal.Footer>
             </Modal>
             <Container>
@@ -46,7 +136,7 @@ class Javascript extends Component {
                         height: "auto",
                         cursor: "pointer",
                       }}
-                      onClick={() => this.openModal()}
+                      onClick={() => this.openWarModal()}
                     />
                   </div>
                 </Col>
@@ -60,7 +150,7 @@ class Javascript extends Component {
                         height: "auto",
                         cursor: "pointer",
                       }}
-                      onClick={() => this.openModal()}
+                      onClick={() => this.openCommunaModal()}
                     />
                   </div>
                 </Col>
@@ -74,7 +164,7 @@ class Javascript extends Component {
                         height: "auto",
                         cursor: "pointer",
                       }}
-                      onClick={() => this.openModal()}
+                      onClick={() => this.openSpongebobifyModal()}
                     />
                   </div>
                 </Col>
