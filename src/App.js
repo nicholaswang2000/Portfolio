@@ -3,6 +3,7 @@ import "./App.css";
 import NBar from "./components/Navbar";
 import BoxIntro from "./components/BoxIntro";
 import AboutMe from "./components/About";
+import Projects from "./components/Projects";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
       </div>
       <div className="About">
         <AboutMe />
+      </div>
+      <div className="Projects">
+        <Projects />
       </div>
     </div>
   );
