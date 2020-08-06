@@ -5,32 +5,27 @@
 }
 
 .Home {
-  height: 600px;
+  height: 700px;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Merriweather Sans", sans-serif;
-  background-image: url("https://onlyvectorbackgrounds.com/wp-content/uploads/2018/09/Abstract-Ambient-Light-Background-Day-Blue.jpg");
+  background-image: url("https://images.pexels.com/photos/255464/pexels-photo-255464.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
 }
 
 .introDiv {
-  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 8%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
   border: 2px solid white;
   color: white;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 50%;
   height: 300px;
+  left: 25%;
 }
 
 .introText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  margin-top: 7%;
 }

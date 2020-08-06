@@ -7,7 +7,7 @@ import "../App.css";
 const NBar = () => {
   return (
     <div style={{ paddingTop: "1em", fontSize: "1.2em" }}>
-      <Navbar>
+      <Navbar collapseOnSelect expand="lg" variant="dark">
         <Navbar.Brand href="#home" style={{ paddingLeft: "180px" }}>
           Logo here
         </Navbar.Brand>
@@ -18,22 +18,30 @@ const NBar = () => {
         >
           <Nav className="mr-auto"></Nav>
           <Nav>
-            <Nav.Link href="#home" style={{ paddingRight: "40px" }}>
+            <Nav.Link
+              href="#home"
+              style={{ paddingRight: "40px", color: "white" }}
+            >
               Home
             </Nav.Link>
-            <Nav.Link href="#about" style={{ paddingRight: "40px" }}>
+            <Nav.Link
+              href="#about"
+              style={{ paddingRight: "40px", color: "white" }}
+            >
               About
             </Nav.Link>
             <NavDropdown
               title="Projects"
               id="collasible-nav-dropdown"
-              style={{ paddingRight: "40px" }}
+              style={{ paddingRight: "40px", color: "white" }}
             >
               <NavDropdown.Item href="#action/3.1">iOS</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Javascript</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Other</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#memes">Fun</Nav.Link>
+            <Nav.Link href="#memes" style={{ color: "white" }}>
+              Fun
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
