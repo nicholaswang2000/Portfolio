@@ -50,7 +50,7 @@
 }
 
 .Projects {
-  height: 720px;
+  height: 550px;
   font-family: "Merriweather Sans", sans-serif;
 }
 
@@ -81,4 +81,11 @@
   height: 100%;
   background-color: #bbb;
   color: black;
+}
+
+.Footer {
+  text-align: center;
+  background: black;
+  color: white;
+  height: 100px;
 }
