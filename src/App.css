@@ -89,3 +89,29 @@
   color: white;
   height: 100px;
 }
+
+.memes {
+  height: 766px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Merriweather Sans", sans-serif;
+  background-image: url("https://images.pexels.com/photos/255464/pexels-photo-255464.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+.memeText {
+  margin-top: 3%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  width: 50%;
+  height: 550px;
+  left: 25%;
+}
+
+.carousel-indicators li {
+  visibility: hidden;
+}

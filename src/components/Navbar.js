@@ -42,7 +42,7 @@ const NBar = () => {
                 </AnchorLink>
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#memes" style={{ color: "white" }}>
+            <Nav.Link href="/memes" style={{ color: "white" }}>
               Fun
             </Nav.Link>
           </Nav>
