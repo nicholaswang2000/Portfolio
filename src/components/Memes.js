@@ -1,12 +1,12 @@
 import React from "react";
-import NBar from "./Navbar";
 import Footer from "./Footer";
 import { Carousel } from "react-bootstrap";
+import NavbarMemes from "./NavbarMemes";
 
 const Memes = () => {
   return (
     <div className="memes">
-      <NBar />
+      <NavbarMemes />
       <div className="memeText">
         <h4>
           <br />

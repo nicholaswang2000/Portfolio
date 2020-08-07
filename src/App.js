@@ -3,9 +3,6 @@ import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import Memes from "./components/Memes";
-import iOS from "./components/iOS";
-import Javascript from "./components/javascript";
-import Other from "./components/Other";
 
 function App() {
   return (
@@ -68,6 +65,36 @@ function App() {
           component={() =>
             (window.location =
               "https://github.com/anitasxd/Data100FinalProject")
+          }
+        />
+        <Route
+          path="/huddlevisitgithub"
+          component={() =>
+            (window.location = "https://github.com/Miclin1024/Huddle")
+          }
+        />
+        <Route
+          path="/iclassgithub"
+          component={() =>
+            (window.location = "https://github.com/rbatra2000/iClass")
+          }
+        />
+        <Route
+          path="/iclassdemo"
+          component={() =>
+            (window.location = "https://www.youtube.com/watch?v=F64EUHZBgPw")
+          }
+        />
+        <Route
+          path="/shamegithub"
+          component={() =>
+            (window.location = "https://github.com/Olivia-li/hacknow")
+          }
+        />
+        <Route
+          path="/shamevisit"
+          component={() =>
+            (window.location = "https://devpost.com/software/the-shame-game")
           }
         />
 

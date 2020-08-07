@@ -22,25 +22,29 @@ const NBar = () => {
             <Nav.Link href="/" style={{ paddingRight: "40px", color: "white" }}>
               Home
             </Nav.Link>
-            <Nav.Link style={{ paddingRight: "40px" }}>
-              <AnchorLink href="#about" style={{ color: "white" }}>
+            <AnchorLink href="#about">
+              <Nav.Link style={{ paddingRight: "40px", color: "white" }}>
                 About
-              </AnchorLink>
-            </Nav.Link>
+              </Nav.Link>
+            </AnchorLink>
             <NavDropdown
-              title="Projects"
-              id="collasible-nav-dropdown"
+              color="white"
+              title={<span style={{ color: "white" }}>Projects</span>}
               style={{ paddingRight: "40px", color: "white" }}
             >
-              <NavDropdown.Item href="/ios">iOS</NavDropdown.Item>
-              <NavDropdown.Item href="/javascript">JavaScript</NavDropdown.Item>
-              <NavDropdown.Item href="/other">Other</NavDropdown.Item>
+              <AnchorLink href="#ios" style={{ color: "black" }}>
+                <NavDropdown.Item>iOS</NavDropdown.Item>
+              </AnchorLink>
+              <AnchorLink href="#javascript" style={{ color: "black" }}>
+                <NavDropdown.Item>JavaScript</NavDropdown.Item>
+              </AnchorLink>
+              <AnchorLink href="#other" style={{ color: "black" }}>
+                <NavDropdown.Item>Other</NavDropdown.Item>
+              </AnchorLink>
               <NavDropdown.Divider />
-              <NavDropdown.Item>
-                <AnchorLink href="#projects" style={{ color: "black" }}>
-                  Browse
-                </AnchorLink>
-              </NavDropdown.Item>
+              <AnchorLink href="#projects" style={{ color: "black" }}>
+                <NavDropdown.Item>All</NavDropdown.Item>
+              </AnchorLink>
             </NavDropdown>
             <Nav.Link href="/memes" style={{ color: "white" }}>
               Fun
