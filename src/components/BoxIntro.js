@@ -12,18 +12,22 @@ const BoxIntro = () => {
           <SocialIcon
             url="https://github.com/nicholaswang2000"
             style={{ marginRight: "20px" }}
+            target="_blank"
           />
           <SocialIcon
             url="https://linkedin.com/in/nicholaswang0/"
             style={{ marginRight: "20px" }}
+            target="_blank"
           />
           <SocialIcon
             url="https://twitter.com/NickWangarang"
             style={{ marginRight: "20px" }}
+            target="_blank"
           />
           <SocialIcon
             url="https://youtube.com/channel/UCEo3NiNZccD5ayG4-x-QEgw"
             style={{ marginRight: "20px" }}
+            target="_blank"
           />
         </div>
       </div>

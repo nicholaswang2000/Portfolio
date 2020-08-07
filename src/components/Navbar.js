@@ -33,7 +33,7 @@ const NBar = () => {
               style={{ paddingRight: "40px", color: "white" }}
             >
               <NavDropdown.Item href="/ios">iOS</NavDropdown.Item>
-              <NavDropdown.Item href="/javascript">Javascript</NavDropdown.Item>
+              <NavDropdown.Item href="/javascript">JavaScript</NavDropdown.Item>
               <NavDropdown.Item href="/other">Other</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item>

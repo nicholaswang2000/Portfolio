@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Memes from "./components/Memes";
 import iOS from "./components/iOS";
 import Javascript from "./components/javascript";
+import Other from "./components/Other";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Switch>
         <Route path="/ios" component={iOS} />
         <Route path="/javascript" component={Javascript} />
-        <Route path="/other" component={Home} />
+        <Route path="/other" component={Other} />
         <Route path="/memes" component={Memes} />
         <Route
           path="/wargamevisitsite"
@@ -53,6 +54,26 @@ function App() {
               "https://github.com/nicholaswang2000/Spongebobify")
           }
         />
+        <Route
+          path="/4chainvisitgithub"
+          component={() =>
+            (window.location = "https://github.com/nicholaswang2000/4chain")
+          }
+        />
+        <Route
+          path="/pintosmoreinfo"
+          component={() =>
+            (window.location = "https://en.wikipedia.org/wiki/Pintos")
+          }
+        />
+        <Route
+          path="/data100github"
+          component={() =>
+            (window.location =
+              "https://github.com/anitasxd/Data100FinalProject")
+          }
+        />
+
         <Route path="/" exact component={Home} />
       </Switch>
     </div>

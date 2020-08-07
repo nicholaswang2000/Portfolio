@@ -15,11 +15,11 @@ const iOS = () => {
           </h2>
           <Container>
             <Row style={{ marginBottom: "3em" }}>
-              <Col sm={4}>
-                <div class="project-card-inner" style={{ marginLeft: "15%" }}>
+              <Col sm={6}>
+                <div class="ios-card-inner" style={{ marginLeft: "15%" }}>
                   <Link to="/ios">
                     <img
-                      src={require("./images/ios.png")}
+                      src={require("./images/huddle.png")}
                       alt="Professional Photo"
                       style={{
                         width: "100%",
@@ -29,22 +29,11 @@ const iOS = () => {
                   </Link>
                 </div>
               </Col>
-              <Col sm={4}>
-                <div class="project-card-inner" style={{ marginLeft: "8%" }}>
+              <Col sm={6}>
+                <div class="ios-card-inner">
                   <Link to="/javascript">
                     <img
-                      src={require("./images/javascript.png")}
-                      alt="Professional Photo"
-                      style={{ width: "100%", height: "auto" }}
-                    />
-                  </Link>
-                </div>
-              </Col>
-              <Col sm={4}>
-                <div class="project-card-inner">
-                  <Link to="/other">
-                    <img
-                      src={require("./images/other.png")}
+                      src={require("./images/iclass.png")}
                       alt="Professional Photo"
                       style={{ width: "100%", height: "auto" }}
                     />
@@ -53,25 +42,22 @@ const iOS = () => {
               </Col>
             </Row>
             <Row>
-              <Col sm={4}>
-                <div class="project-card-inner" style={{ marginLeft: "15%" }}>
-                  <Link to="/ios">
+              <Col sm={6}>
+                <div class="ios-card-inner" style={{ marginLeft: "15%" }}>
+                  <Link to="/other">
                     <img
-                      src={require("./images/ios.png")}
+                      src={require("./images/tc.png")}
                       alt="Professional Photo"
-                      style={{
-                        width: "100%",
-                        height: "auto",
-                      }}
+                      style={{ width: "100%", height: "auto" }}
                     />
                   </Link>
                 </div>
               </Col>
-              <Col sm={4}>
-                <div class="project-card-inner" style={{ marginLeft: "8%" }}>
+              <Col sm={6}>
+                <div class="ios-card-inner">
                   <Link to="/javascript">
                     <img
-                      src={require("./images/javascript.png")}
+                      src={require("./images/shame.png")}
                       alt="Professional Photo"
                       style={{ width: "100%", height: "auto" }}
                     />
