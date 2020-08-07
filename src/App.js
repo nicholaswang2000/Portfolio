@@ -11,9 +11,6 @@ function App() {
   return (
     <div>
       <Switch>
-        <Route path="/ios" component={iOS} />
-        <Route path="/javascript" component={Javascript} />
-        <Route path="/other" component={Other} />
         <Route path="/memes" component={Memes} />
         <Route
           path="/wargamevisitsite"

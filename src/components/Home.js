@@ -20,7 +20,6 @@ const Home = () => {
       <div className="Projects" id="projects">
         <Projects />
       </div>
-      <Footer />
     </div>
   );
 };

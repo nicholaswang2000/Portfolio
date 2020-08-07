@@ -8,28 +8,28 @@ class Other extends Component {
   constructor() {
     super();
     this.state = {
-      showWar: false,
-      showCommuna: false,
-      showSpongebobify: false,
+      show1: false,
+      show2: false,
+      show3: false,
     };
   }
-  closeWarModal() {
-    this.setState({ showWar: false });
+  close1Modal() {
+    this.setState({ show1: false });
   }
-  openWarModal() {
-    this.setState({ showWar: true });
+  open1Modal() {
+    this.setState({ show1: true });
   }
-  closeCommunaModal() {
-    this.setState({ showCommuna: false });
+  close2Modal() {
+    this.setState({ show2: false });
   }
-  openCommunaModal() {
-    this.setState({ showCommuna: true });
+  open2Modal() {
+    this.setState({ show2: true });
   }
-  closeSpongebobifyModal() {
-    this.setState({ showSpongebobify: false });
+  close3Modal() {
+    this.setState({ show3: false });
   }
-  openSpongebobifyModal() {
-    this.setState({ showSpongebobify: true });
+  open3Modal() {
+    this.setState({ show3: true });
   }
   render() {
     return (
@@ -41,7 +41,7 @@ class Other extends Component {
               <br />
               Other Projects Showcase
             </h2>
-            <Modal show={this.state.showWar}>
+            <Modal show={this.state.show1}>
               <Modal.Body>
                 <h4>4Chain</h4>A decentralized meme posting application that
                 uses the Ethereum blockchain to track timestamps and hashes of
@@ -50,14 +50,14 @@ class Other extends Component {
               </Modal.Body>
               <Modal.Footer>
                 <Button
-                  onClick={() => this.closeWarModal()}
+                  onClick={() => this.close1Modal()}
                   className="btn-secondary"
                 >
                   Close
                 </Button>
                 <Link to="/4chainvisitgithub" target="_blank">
                   <Button
-                    onClick={() => this.closeWarModal()}
+                    onClick={() => this.close1Modal()}
                     className="btn-info"
                   >
                     Github
@@ -65,7 +65,7 @@ class Other extends Component {
                 </Link>
               </Modal.Footer>
             </Modal>
-            <Modal show={this.state.showCommuna}>
+            <Modal show={this.state.show2}>
               <Modal.Body>
                 <h4>PintOS</h4>An Operating System for x86 instruction set
                 architecture supporting kernel threads, user programs, a fast
@@ -75,14 +75,14 @@ class Other extends Component {
               </Modal.Body>
               <Modal.Footer>
                 <Button
-                  onClick={() => this.closeCommunaModal()}
+                  onClick={() => this.close2Modal()}
                   className="btn-secondary"
                 >
                   Close
                 </Button>
                 <Link to="/pintosmoreinfo" target="_blank">
                   <Button
-                    onClick={() => this.closeCommunaModal()}
+                    onClick={() => this.close2Modal()}
                     className="btn-info"
                   >
                     More Info
@@ -90,7 +90,7 @@ class Other extends Component {
                 </Link>
               </Modal.Footer>
             </Modal>
-            <Modal show={this.state.showSpongebobify}>
+            <Modal show={this.state.show3}>
               <Modal.Body>
                 <h4>Contraceptive Data Project</h4>Our final project for data
                 100 was to analyze contraceptive type relationships with other
@@ -101,14 +101,14 @@ class Other extends Component {
               </Modal.Body>
               <Modal.Footer>
                 <Button
-                  onClick={() => this.closeSpongebobifyModal()}
+                  onClick={() => this.close3Modal()}
                   className="btn-secondary"
                 >
                   Close
                 </Button>
                 <Link to="/data100github" target="_blank">
                   <Button
-                    onClick={() => this.closeSpongebobifyModal()}
+                    onClick={() => this.close3Modal()}
                     className="btn-info"
                   >
                     Github
@@ -128,7 +128,7 @@ class Other extends Component {
                         height: "auto",
                         cursor: "pointer",
                       }}
-                      onClick={() => this.openWarModal()}
+                      onClick={() => this.open1Modal()}
                     />
                   </div>
                 </Col>
@@ -142,7 +142,7 @@ class Other extends Component {
                         height: "auto",
                         cursor: "pointer",
                       }}
-                      onClick={() => this.openCommunaModal()}
+                      onClick={() => this.open2Modal()}
                     />
                   </div>
                 </Col>
@@ -156,7 +156,7 @@ class Other extends Component {
                         height: "auto",
                         cursor: "pointer",
                       }}
-                      onClick={() => this.openSpongebobifyModal()}
+                      onClick={() => this.open3Modal()}
                     />
                   </div>
                 </Col>
