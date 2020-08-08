@@ -24,7 +24,7 @@ const AboutMe = () => {
               " OS / Systems Engineer",
               " Canadian 🇨🇦",
               " Pianist",
-              " Avid Tweeter",
+              " Dank Memer",
               " Ganondorf Main",
             ]}
           />

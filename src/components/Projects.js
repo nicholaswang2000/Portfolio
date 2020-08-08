@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import iOS from "./iOS";
 
 class Projects extends Component {
   constructor() {
