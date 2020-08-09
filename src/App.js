@@ -3,10 +3,14 @@ import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import Memes from "./components/Memes";
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
     <div>
+      <Helmet>
+        <title>Nicholas Wang</title>
+      </Helmet>
       <Switch>
         <Route path="/memes" component={Memes} />
         <Route
