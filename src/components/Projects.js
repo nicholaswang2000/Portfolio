@@ -636,7 +636,7 @@ class Projects extends Component {
                     Ethereum blockchain to track timestamps and hashes of meme
                     images so that your memes are protected. <br />
                     <br />
-                    Created with <li>Truffle Fraemwork</li>
+                    Created with <li>Truffle Framework</li>
                     <li>Ganache</li>
                     <li>Solidity</li>
                     <li>Metamask</li>

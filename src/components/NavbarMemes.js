@@ -8,7 +8,11 @@ const NavbarMemes = () => {
     <div style={{ paddingTop: "1em", fontSize: "1.2em" }}>
       <Navbar collapseOnSelect expand="lg" variant="dark">
         <Navbar.Brand href="/" style={{ paddingLeft: "150px" }}>
-          Logo here
+          <img
+            src={require("./images/logo.png")}
+            alt="Professional Photo"
+            style={{ height: "40px", width: "auto" }}
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
