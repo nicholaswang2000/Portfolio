@@ -50,8 +50,8 @@ const NBar = () => {
                 <NavDropdown.Item>All</NavDropdown.Item>
               </AnchorLink>
             </NavDropdown>
-            <Nav.Link href="/memes" style={{ color: "white" }}>
-              Fun
+            <Nav.Link href="/resume" target="blank" style={{ color: "white" }}>
+              Resume
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

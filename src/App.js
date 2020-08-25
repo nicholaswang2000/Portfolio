@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
-import Memes from "./components/Memes";
+import Resume from "./components/Memes";
 import { Helmet } from "react-helmet";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         <title>Nicholas Wang</title>
       </Helmet>
       <Switch>
-        <Route path="/memes" component={Memes} />
+        <Route path="/resume" component={Resume} />
         <Route
           path="/wargamevisitsite"
           component={() =>
